@@ -3,17 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Category;
+use App\Usuarios;
+use App\Post;
 
 class PruebasController extends Controller
 {
-    /**
-     * Handle the incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function __invoke(Request $request)
-    {
-        //
+    public function pruebaOrm() {
+        $posts=Post::all();
+        var_dump($posts);
+        die();
+
     }
 }
